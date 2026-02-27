@@ -1,0 +1,140 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Girlify — Luxury Women's Fashion Ecommerce */
+:root {
+  --background: #FAF8F5;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A1A;
+  --primary: #C6A75E;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F3EDE4;
+  --secondary-foreground: #1A1A1A;
+  --muted: #F0EBE3;
+  --muted-foreground: #7A7268;
+  --accent: #C6A75E;
+  --accent-foreground: #FFFFFF;
+  --destructive: #D44A4A;
+  --destructive-foreground: #FFFFFF;
+  --border: #E8E2D9;
+  --input: #E8E2D9;
+  --ring: #C6A75E;
+  --chart-1: #C6A75E;
+  --chart-2: #7A7268;
+  --chart-3: #D4C9B8;
+  --chart-4: #1A1A1A;
+  --chart-5: #F3EDE4;
+  --radius: 0.5rem;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1A1A1A;
+  --sidebar-primary: #C6A75E;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F3EDE4;
+  --sidebar-accent-foreground: #1A1A1A;
+  --sidebar-border: #E8E2D9;
+  --sidebar-ring: #C6A75E;
+  --gold: #C6A75E;
+  --gold-dim: #B39648;
+  --cream: #FAF8F5;
+  --blush: #F5EDE6;
+}
+
+/* Girlify Admin — Dark Theme */
+.dark {
+  --background: #121212;
+  --foreground: #E8E8E8;
+  --card: #1E1E1E;
+  --card-foreground: #E8E8E8;
+  --popover: #1E1E1E;
+  --popover-foreground: #E8E8E8;
+  --primary: #C6A75E;
+  --primary-foreground: #121212;
+  --secondary: #2A2A2A;
+  --secondary-foreground: #E8E8E8;
+  --muted: #2A2A2A;
+  --muted-foreground: #8A8A8A;
+  --accent: #C6A75E;
+  --accent-foreground: #121212;
+  --destructive: #E04545;
+  --destructive-foreground: #FFFFFF;
+  --border: #2E2E2E;
+  --input: #2A2A2A;
+  --ring: #C6A75E;
+  --chart-1: #C6A75E;
+  --chart-2: #8A8A8A;
+  --chart-3: #5A5A5A;
+  --chart-4: #E8E8E8;
+  --chart-5: #3A3A3A;
+  --sidebar: #161616;
+  --sidebar-foreground: #B0B0B0;
+  --sidebar-primary: #C6A75E;
+  --sidebar-primary-foreground: #121212;
+  --sidebar-accent: #1E1E1E;
+  --sidebar-accent-foreground: #E8E8E8;
+  --sidebar-border: #2E2E2E;
+  --sidebar-ring: #C6A75E;
+  --gold: #C6A75E;
+  --gold-dim: #A08840;
+  --cream: #1A1A1A;
+  --blush: #242424;
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Geist', 'Geist Fallback', sans-serif;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-gold: var(--gold);
+  --color-gold-dim: var(--gold-dim);
+  --color-cream: var(--cream);
+  --color-blush: var(--blush);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
